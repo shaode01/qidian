@@ -22,6 +22,6 @@ while(maxtry>0):
         maxtry=maxtry-1
         print resp['BaseResponse']['ErrMsg']
 if(flag):
-    users = itchat.search_friends(name=u'一步')
+    users = itchat.search_friends(name=u'你的起点昵称')
     itchat.send(u"起点签到失误，请手动签到",toUserName = users[0]['UserName'])
   
